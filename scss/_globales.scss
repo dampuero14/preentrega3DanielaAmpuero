@@ -1,0 +1,96 @@
+body {
+    background-color: $color-secundario;
+}
+
+header {
+    background-color: $color-primario;
+}
+
+@mixin sizes($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+.logo {
+    @include sizes (250px, 180px)
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: $color-cuaternario;
+}
+
+.nav-link {
+    color: $color-terciario;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    max-width: 100%;
+}
+
+.card-img-top {
+    height: 250px;
+
+    &:hover {
+        transform: scale(1.3);
+        transition: all 2s;
+    }
+}
+
+$redes: (
+    instagram: rgb(230,70,70),
+    tiktok: black,
+    youtube: red
+);
+
+@each $redSocial, $color in $redes {
+    .bi-#{$redSocial} {
+        color: $color;
+    }
+}
+
+h2 {
+    font-size: $size-h1 - 1rem;
+}
+
+h3 {
+    font-size: $size-h1 - 1.5rem;
+}

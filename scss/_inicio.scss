@@ -1,0 +1,29 @@
+.carrusel-item img {
+    height: 45vh;
+}
+
+@media (min-width: 520px) {
+    .carrusel-item img {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .carrusel-item img {
+        height: 700vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carrusel-item img {
+        height: 80vh;
+    }
+    #carouselExampleFade {
+        width: 70%;
+    }
+}
+
+.card-body {
+    background-color: $color-terciario;
+    text-align: center;
+}

@@ -1,0 +1,158 @@
+/*PALETA DE COLORES*/
+/*FUENTES*/
+body {
+  background-color: #f1e3d3;
+}
+
+header {
+  background-color: #f2d0a9;
+}
+
+.logo {
+  height: 180px;
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: #8e7dbe;
+}
+
+.nav-link {
+  color: #d88c9a;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  max-width: 100%;
+}
+
+.card-img-top {
+  height: 250px;
+}
+.card-img-top:hover {
+  transform: scale(1.3);
+  transition: all 2s;
+}
+
+.bi-instagram {
+  color: rgb(230, 70, 70);
+}
+
+.bi-tiktok {
+  color: black;
+}
+
+.bi-youtube {
+  color: red;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.carrusel-item img {
+  height: 45vh;
+}
+
+@media (min-width: 520px) {
+  .carrusel-item img {
+    height: 50vh;
+  }
+}
+@media (min-width: 768px) {
+  .carrusel-item img {
+    height: 700vh;
+  }
+}
+@media (min-width: 1024px) {
+  .carrusel-item img {
+    height: 80vh;
+  }
+  #carouselExampleFade {
+    width: 70%;
+  }
+}
+.card-body {
+  background-color: #d88c9a;
+  text-align: center;
+}
+
+.titulo-form {
+  margin-top: 40px;
+}
+
+.mail, .tema, .sugerencia {
+  margin-top: 15px;
+}
+
+form {
+  margin: 15px 15px;
+}
+
+iframe {
+  margin: 40px 15px 15px;
+}
+
+.btn, .btn--enviar, .btn--limpiar, .btn--carrito {
+  background-color: #8e7dbe;
+  border: #8e7dbe;
+  text-align: center;
+  color: white;
+}
+
+.btn--carrito {
+  background-color: #8e7dbe;
+  color: black;
+}
+
+.btn--limpiar {
+  background-color: #d88c9a;
+  color: black;
+}
+
+.btn--enviar {
+  background-color: #d88c9a;
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */

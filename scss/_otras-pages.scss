@@ -1,0 +1,29 @@
+.btn {
+    background-color: $color-cuaternario;
+    border: $color-cuaternario;
+    text-align: center;
+    color: white;
+}
+
+.btn--carrito {
+    @extend .btn;
+    background-color: $color-cuaternario;
+    color: black;
+}
+
+.btn--limpiar {
+    @extend .btn;
+    background-color: $color-terciario;
+    color: black;
+}
+
+.btn--enviar {
+    @extend .btn;
+    background-color: $color-terciario;
+    color: black;
+}
+
+
+
+
+
